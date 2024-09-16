@@ -6,8 +6,10 @@
 hi clear
 if exists('syntax_on') | syntax reset | endif
 
-let g:colors_name = 'meh'
+let g:colors_name = 'tsuki-meh'
 set background=dark
+
+set termguicolors
 
 " ============================================================================
 " My colors
@@ -57,7 +59,8 @@ hi! Comment                           guifg=#70788a gui=italic              cter
 hi! Constant                          guifg=NONE    gui=italic
 hi! Delimiter                         guifg=#cc99cc                       ctermfg=139
 hi! DiffAdd             guibg=#2a332a guifg=#668844           ctermbg=235 ctermfg=22
-hi! DiffChange          guibg=#2c2b2a guifg=#7f6030           ctermbg=235 ctermfg=94
+"-hi! DiffChange          guibg=#2c2b2a guifg=#7f6030           ctermbg=235 ctermfg=94
+hi! DiffChange          guibg=#2c2b2a guifg=#f5e37f           ctermbg=235 ctermfg=94
 hi! DiffDelete          guibg=#4a2a2a guifg=#aa6666           ctermbg=235 ctermfg=52
 hi! DiffText            guibg=#4a2a2a
 hi! Error               guibg=NONE    guifg=#ee6666           ctermbg=NONE ctermfg=160
@@ -545,3 +548,4 @@ hi! link qfSeparator  dkoDecorations
 hi link netrwTreeBar  dkoDecorations
 hi link netrwClassify Delimiter
 hi link netrwExe      Normal
+
